@@ -1,0 +1,22 @@
+#main {
+    display: flex;
+    flex-wrap: wrap; /* prelamanje u vise redova */
+    justify-content: center;
+    align-items: center;
+}
+
+#main div {
+    width: 25%;
+    padding: 25px;
+    position: relative;
+}
+
+#main img {
+    max-width: 100%;
+}
+
+.productionYear {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
