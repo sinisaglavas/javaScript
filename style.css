@@ -1,0 +1,22 @@
+.hidden {
+    display: none;
+}
+
+#estates {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.realEstate {
+    width: 25%;
+    height: auto;
+    background-color: burlywood;
+    padding: 2px;
+    margin: 2px;
+}
+
+.realEstate * { /* svi elementi */
+    padding-left: 5px;
+}
