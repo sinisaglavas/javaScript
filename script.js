@@ -33,7 +33,7 @@ drawButton.addEventListener('click', function(){
     /**
      * beginPath i moveTo
      * Treba nam petlja koja radi lineTo -> preskoci broj 0
-     * stroke() isto ostaje
+     * stroke() - ostaje
      */
     context.beginPath(); // kreni da crtas - 2d grafika
 
