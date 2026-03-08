@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#movieList {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movieHolder {
+    max-width: 30%;
+    padding: 25px;
+}
+.movieHolder img {
+    width: 100%;
+}
