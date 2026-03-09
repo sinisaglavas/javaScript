@@ -1,5 +1,4 @@
 
-
 let products = ['hleb', 'mleko', 'jogurt'];
 
 console.log(products);
