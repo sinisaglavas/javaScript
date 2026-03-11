@@ -1,0 +1,28 @@
+#mealsHolder {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mealImage {
+    width: 320px;
+    margin: 5px;
+}
+
+#popup {
+    width: 100%;
+    height: auto;
+    position: fixed; /* kada se skroluje da prati */
+    left: 0;
+    top: 0; /* da stoji u gornjem levom uglu */
+    background-color: rgba(0, 0, 0, 0.5); /* crna koja je 50% prozirna */
+    display: none; /* po default-u sakriven */
+    justify-content: center;
+}
+
+#innerPopup {
+    margin-top: 20px;
+    width: 50%;
+    height: auto;
+    background-color: darkgrey;
+    padding: 10px;
+}
