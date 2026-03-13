@@ -1,0 +1,25 @@
+{
+  "name": "22.cas-npm",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/sinisaglavas/javaScript#readme",
+  "bugs": {
+    "url": "https://github.com/sinisaglavas/javaScript/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sinisaglavas/javaScript.git"
+  },
+  "license": "ISC",
+  "author": "Sinisa Glavas",
+  "type": "commonjs",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-terser": "npx watch \"npx terser script.js -o script.min.js\""
+  },
+  "devDependencies": {
+    "terser": "^5.46.0",
+    "watch": "^1.0.2"
+  }
+}
