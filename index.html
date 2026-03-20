@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="page-wrapper">
+    <div class="overlay"></div>
+
+    <div class="container">
+        <header class="top-bar">
+            <div class="brand">
+                <h1>Vremenska prognoza</h1>
+                <p id="currentCity"></p>
+            </div>
+
+            <div class="top-actions">
+                <button id="changeLocation" class="btn btn-secondary">Promeni lokaciju</button>
+                <button id="showWeatherForMyLocation" class="btn btn-primary">Lociraj me</button>
+            </div>
+        </header>
+
+        <section class="current-weather card">
+            <div class="current-left">
+                <p class="section-label">Trenutna prognoza</p>
+                <h2 id="cityName"></h2>
+                <p id="todayDate" class="date-text"></p>
+
+                <div class="temperature-row">
+                    <img id="currentIcon" alt="Weather icon">
+                    <div>
+                        <div id="currentTemp" class="big-temp"></div>
+                        <div id="currentDesc" class="weather-desc"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="current-right">
+                <div class="info-box">
+                    <span>Osećaj</span>
+                    <strong id="feelsLike"></strong>
+                </div>
+                <div class="info-box">
+                    <span>Vlažnost</span>
+                    <strong id="humidity"></strong>
+                </div>
+                <div class="info-box">
+                    <span>Vetar</span>
+                    <strong id="windSpeed"></strong>
+                </div>
+                <div class="info-box">
+                    <span>Pritisak</span>
+                    <strong id="pressure"></strong>
+                </div>
+            </div>
+        </section>
+
+        <section class="forecast-section">
+            <div class="section-header">
+                <h3>Prognoza za sledeća 3 dana</h3>
+            </div>
+
+            <div class="forecast-grid three-days" id="threeDaysForecast">
+                <div class="forecast-card card">
+                    <p id="firstDayDate" class="forecast-day"></p>
+                    <img id="firstDayIcon" alt="Sun">
+                    <p id="firstDayDesc" class="forecast-desc"></p>
+                    <p id="firstDayTemp" class="forecast-temp"></p>
+                    <p id="firstDayUv"></p>
+                </div>
+
+                <div class="forecast-card card">
+                    <p id="secondDayDate" class="forecast-day"></p>
+                    <img id="secondDayIcon" alt="Sun">
+                    <p id="secondDayDesc" class="forecast-desc"></p>
+                    <p id="secondDayTemp" class="forecast-temp"></p>
+                    <p id="secondDayUv"></p>
+                </div>
+
+                <div class="forecast-card card">
+                    <p id="thirdDayDate" class="forecast-day"></p>
+                    <img id="thirdDayIcon" alt="Sun">
+                    <p id="thirdDayDesc" class="forecast-desc"></p>
+                    <p id="thirdDayTemp" class="forecast-temp"></p>
+                    <p id="thirdDayUv"></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="forecast-section">
+            <div class="section-header">
+                <h3>Dugoročna prognoza za 7 dana (Podaci od drugog resursa - Open Meteo)</h3>
+            </div>
+
+            <div class="long-forecast-grid" id="monthlyForecast"></div>
+        </section>
+    </div>
+</div>
+
+<script src="/dist/script.min.js"></script>
+</body>
+</html>
